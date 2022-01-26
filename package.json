@@ -4,7 +4,8 @@
   "description": "API used for users to make comments, and follow friends activities.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "moment": "^2.27.0",
-    "mongoose": "^5.9.23"
+    "mongoose": "^5.9.23",
+    "nodemon": "^2.0.4"
   }
 }
