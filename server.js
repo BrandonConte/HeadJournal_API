@@ -1,3 +1,4 @@
+// Require express and monggose
 const express = require('express');
 
 const mongoose = require('mongoose');
@@ -11,14 +12,14 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 
 app.use(require('./routes'));
-
+// Connects mongoose
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/HeadJournal_API', {
     useFindAndModify: false,
     userNewUrlParser: true,
     useUnifiedTopology: true
 });
 
-// Use this to log mongo queries
+// Use this to log mongoose queries
 mongoose.set('debug', true);
 
 app.listen(PORT, () => console.log(` *** Connected to localhost:${PORT} ***`));

@@ -1,9 +1,11 @@
+// Require mongoose and moment
 const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 
+// Reactions Schema
 const ReactionsSchema = new Schema(
     {
-    // set custom id to avoid confusion with parent comment's _id field
+    // sets custom id 
     reactionId: {
         type: Schema.Types.ObjectId,
         default: ()=> new Types.ObjectId()
@@ -33,7 +35,7 @@ const ReactionsSchema = new Schema(
     } 
     }
 );
-
+// Thoughts Schema
 const ThoughtsSchema = new Schema(
     {
     thoughtText: {
@@ -42,7 +44,7 @@ const ThoughtsSchema = new Schema(
         minlength: 1,
         maxlength: 250
     },
-
+    // Moment
     createdAt: {
         type: Date,
         default: Date.now,
@@ -54,7 +56,7 @@ const ThoughtsSchema = new Schema(
         required: true
     },
 
-    // use ReactionsSchema to validate data for a reply
+    // use ReactionsSchema to validate
     reactions: [ReactionsSchema]
     },
 
@@ -75,5 +77,5 @@ ThoughtsSchema.virtual('reactionCount').get(function() {
 
 // create the Thoughts model using the Thoughts Schema
 const Thoughts = model('Thoughts', ThoughtsSchema);
-
+// Export thoughts module
 module.exports = Thoughts;
