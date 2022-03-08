@@ -1,26 +1,17 @@
 {
-  "name": "headjournal_api",
+  "name": "facespace-social-network-api",
   "version": "1.0.0",
-  "description": "API used for users to make comments, and follow friends activities.",
-  "main": "index.js",
+  "private": true,
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrandonConte/HeadJournal_API.git"
-  },
-  "author": "Brandon Conte",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrandonConte/HeadJournal_API/issues"
-  },
-  "homepage": "https://github.com/BrandonConte/HeadJournal_API#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "moment": "^2.27.0",
-    "mongoose": "^5.9.23",
-    "nodemon": "^2.0.4"
+    "mongoose": "^6.1.8"
   }
 }
