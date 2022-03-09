@@ -19,8 +19,8 @@ Use the `HeadJournal` Social Network API backend to share thoughts, react to a f
 
 * [URL of Video Demos]
 
-User Routes (insert video link here)
+User Routes (https://drive.google.com/file/d/1FwtmdKm05hLwdJKmSwuDQqHZwEZoQqNM/view?usp=sharing)
 
-Thought Routes (Insert Video link here)
+Thought Routes (https://drive.google.com/file/d/1PJ47sg1nhNUMuSf8CBSmEPFYoaTipfwo/view?usp=sharing)
 
-Friend & Reaction Routes (Insert Video link here)
+Friend & Reaction Routes (https://drive.google.com/file/d/1T-Ur9DhIPHzm1a659_rrDr5UEo-3-J3b/view?usp=sharing)
